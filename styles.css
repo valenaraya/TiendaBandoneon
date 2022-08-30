@@ -1,0 +1,169 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background: linear-gradient(#000000, #63635b);
+    background-color: #63635b;
+}
+header{
+    background-color:#1c1c1b ;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.nombre {
+    font-family: 'Quicksand', sans-serif;
+    color:#7d7c7a;
+    display: flex;
+    align-items: center;
+}
+
+.navegador {
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    text-align: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.link{
+    display: inline-block;
+    list-style-type: none
+}
+
+.logo_imagen {
+    border: solid 5px #7d7c7a;
+    border-style: groove;
+    height: 50px;
+    display: flex;
+    margin-right: 10px;
+}
+.subtitulo{
+    color: #7d7c7a;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    text-decoration-line: underline;
+    margin: 20px;
+}
+.foto{
+    border: 3px solid #423f3e;
+    box-shadow: 0px 0px 30px black;
+    justify-content: center;
+
+}
+footer{
+    font-family: 'Quicksand', sans-serif;
+}
+.titulo{
+    color: #7d7c7a;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.materiales{
+    color: #b39f9d;
+    list-style: circle;
+    text-align: left;
+    padding: 50px;
+}
+.preparacion{
+    color: #b39f9d;
+    list-style: decimal;
+    text-align: left;
+    padding: 50px;
+}
+.imagen_producto{
+    text-align: center;
+    float: right;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px black;
+}
+.producto{
+    margin: 30px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px black;
+} 
+.redes{
+    margin: 50px;
+    padding: 20px;
+    color: #b39f9d;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+.enlace{
+    margin: 50px;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 30px #fff;
+}
+.historia{
+    color: #b39f9d;
+    font-family: 'Quicksand', sans-serif;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: #856663;
+}
+#productos_con_imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+}
+form{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #856663;
+    padding: 10px;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    outline: none;
+}
+@media (max-width:700px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        padding: 10px 0px;
+        align-items: center;
+    }
+    #productos_con_imagenes{
+        flex-direction: column;
+        align-items: center;
+    }
+    #materiales_lamparas_de_sal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #materiales_macetas_geometricas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
